@@ -7,22 +7,14 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 30px;
 `;
-export const IsOnline = styled.div`
-  background-color: green;
+
+export const Status = styled.div`
+  background-color: ${p => (p.$isOnline ? 'green' : 'red')};
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 50px;
 `;
-
-export const IsNotOnline = styled.div`
-  background-color: red;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-right: 50px;
-`;
-
 export const Item = styled.li`
   display: flex;
   align-items: center;
